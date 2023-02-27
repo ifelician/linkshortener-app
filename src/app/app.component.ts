@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'linkshortener-app';
+  isFormSubmitted = false;
+  inputUrl='';
+
+  model = {
+    inputUrl: ''
+  }
+
+  constructor(){}
+
+  onSubmitUrlForm(){
+    console.log('Form submitted.');
+  }
+   
 }
